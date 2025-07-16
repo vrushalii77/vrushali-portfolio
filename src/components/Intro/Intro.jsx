@@ -144,8 +144,8 @@ function Intro() {
         <div className="work-together">
           <span className="head1">Let's Work Together</span>
           <span className="head2">
-            I'm Always open to discussing about new Projects, internship
-            oportunities, or ways to contribute to your team{" "}
+            I'm Always open to discussing about new Projects, Job oportunities,
+            or ways to contribute to your team{" "}
           </span>
           <Link to="/contact">
             <button className="work-btn">Get In Touch</button>
