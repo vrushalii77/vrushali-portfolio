@@ -9,7 +9,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
-  color: #1f3f81;
+  color: #333;
   margin-bottom: 2rem;
 }
 
@@ -38,6 +38,7 @@
   font-size: 1rem;
   color: #555;
   margin-top: 0.5rem;
+  word-wrap: break-word;
 }
 
 .resume-links a {
@@ -79,7 +80,7 @@
 }
 
 .download-btn {
-  background-color: #4e8cff;
+  background-color: #244b93;
   color: #fff;
   padding: 0.8rem 1.5rem;
   font-weight: 600;
@@ -105,5 +106,66 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .resume-box {
+    padding: 1.5rem;
+  }
+
+  .resume-title {
+    font-size: 2.2rem;
+  }
+
+  .resume-name {
+    font-size: 1.8rem;
+  }
+
+  .resume-links {
+    font-size: 0.95rem;
+  }
+
+  .resume-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .resume-content p,
+  .resume-content ul li {
+    font-size: 0.95rem;
+  }
+
+  .download-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .resume-title {
+    font-size: 1.8rem;
+  }
+
+  .resume-name {
+    font-size: 1.6rem;
+  }
+
+  .resume-links {
+    font-size: 0.9rem;
+  }
+
+  .resume-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .resume-content p,
+  .resume-content ul li {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
   }
 }
