@@ -1,0 +1,370 @@
+/* ************Intro Section************ */
+#intro {
+  width: 100%;
+  max-width: 800px; /* width of the content- 600px*/
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.intro-content {
+  z-index: 2;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.intro-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333;
+  line-height: 1.4;
+}
+
+.hi {
+  font-size: 2rem;
+}
+
+.im {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.name {
+  font-weight: bold;
+  color: #00008b;
+}
+
+.profession {
+  font-size: 2rem;
+  font-weight: bold;
+  /* color: #000080; */
+}
+
+/* .btn-content {
+  display: flex;
+} */
+
+.hireme-btn {
+  margin-top: 1rem;
+  border: none;
+  background-color: aliceblue;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hireme-img {
+  margin-right: 0.5rem;
+  height: 1rem;
+}
+
+/* Optional: center the button wrapper too */
+.btn-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    padding: 7rem 1rem 2rem 1rem;
+  }
+
+  .hireme-btn {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* ************About Section*********** */
+.about-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-top: 3rem;
+  width: 100%; /* Ensures it takes full width */
+  display: block;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.abt-me {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* "Who I Am" heading */
+.i-am {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+}
+
+/* Description under "Who I Am" */
+.about-description {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.abt-btn {
+  display: flex;
+}
+
+.abt-btn1 {
+  padding: 10px;
+  margin-left: 8px;
+  background-color: rgb(14, 84, 145);
+  color: white;
+  font-weight: 600;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Right image */
+.about-img {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .abt-me,
+  .about-img {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .i-am,
+  .about-description {
+    text-align: center;
+  }
+}
+
+/* *************** My Skills ***************** */
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section Animation */
+.skills {
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Heading Animation */
+.skills-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-top: 3rem;
+  width: 100%;
+  display: block;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Skill Boxes Container */
+.skill-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual Skill Box */
+.skill-box1 {
+  background-color: aliceblue;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Animate each skill box with delay */
+.skill-box1:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.skill-box1:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.skill-box1:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* Skill title */
+.skill-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Buttons */
+.lang {
+  display: flex;
+  background-color: aliceblue;
+  border: none;
+  margin: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.lang:hover {
+  background-color: #d1d1d1;
+  transform: scale(1.05);
+}
+
+/* Work Together Section */
+.work-together {
+  background-color: aliceblue;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 3rem auto;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1.2s;
+}
+
+.head1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00008b;
+}
+
+.head2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  max-width: 800px;
+}
+
+.work-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #00008b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.work-btn:hover {
+  background-color: #3333aa;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 2.2rem;
+  }
+
+  .skill-box1 {
+    width: 100%;
+  }
+
+  .head1 {
+    font-size: 2rem;
+  }
+
+  .head2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skills-heading {
+    font-size: 1.8rem;
+  }
+
+  .lang {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .head1 {
+    font-size: 1.5rem;
+  }
+
+  .head2 {
+    font-size: 0.95rem;
+  }
+
+  .work-btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
