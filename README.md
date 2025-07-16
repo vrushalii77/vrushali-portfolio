@@ -1,12 +1,30 @@
-# React + Vite
+# Vrushali Jadhav - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! I'm Vrushali Jadhav, a Java Full Stack Developer passionate about building responsive, user-friendly web applications with a strong focus on performance and design.
 
-Currently, two official plugins are available:
+**Live Demo**: [Visit My Portfolio](https://vrushalijadhav-portfolio.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React JS, Tailwind CSS, JavaScript
+- **Routing**: React Router DOM
+- **Deployment**: Netlify
+- **Tools**: VS Code, Git, GitHub
+
+---
+
+## Features
+
+- Responsive design for all screen sizes 📱💻
+
+- About Me section with smooth animations
+
+- Projects timeline with real project details
+
+- Contact form (coming soon with backend)
+
+- Smooth routing and hover effects
+
+- Animated transitions using Framer Motion
