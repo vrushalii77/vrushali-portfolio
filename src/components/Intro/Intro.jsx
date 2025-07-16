@@ -38,7 +38,7 @@ function Intro() {
         <img className="selfimg" src="./VrushaliSelfPic.jpg" alt="Vrushali" />
       </div> */}
       </section>
-      <section id="about">
+      {/* <section id="about">
         <span className="about-heading">About Me</span>
 
         <div className="about-box">
@@ -71,7 +71,48 @@ function Intro() {
             <img src="./girl2.png" alt="girl with laptop" />
           </div>
         </div>
+      </section> */}
+      <section id="about">
+        <span className="about-heading">About Me</span>
+
+        <div className="about-box">
+          <div className="abt-me">
+            <span className="i-am">Who I Am</span>
+
+            {/* Grouped description and buttons */}
+            <div className="about-body">
+              <span className="about-description">
+                I am Vrushali Jadhav, a passionate and dedicated Java Full Stack
+                Developer with a strong foundation in both front-end and
+                back-end development. I specialize in building user-friendly,
+                responsive, and performance-driven web applications. With
+                hands-on experience in technologies like Java, Spring Boot,
+                React, MySQL, and more.
+              </span>
+              <span className="about-description">
+                I enjoy transforming ideas into real-world solutions. I am
+                continuously learning, exploring new tech, and striving to grow
+                as a developer every day. My goal is to contribute to impactful
+                projects and be a part of innovative teams that value clean code
+                and creative problem-solving.
+              </span>
+              <div className="abt-btn">
+                <Link to="/aboutme">
+                  <button className="abt-btn1">More About Me</button>
+                </Link>
+                <Link to="/project">
+                  <button className="abt-btn1">See my work</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="about-img">
+            <img src="./girl2.png" alt="girl with laptop" />
+          </div>
+        </div>
       </section>
+
       <section className="skills">
         <span className="skills-heading">My Skills</span>
         <div className="skill-boxes">
