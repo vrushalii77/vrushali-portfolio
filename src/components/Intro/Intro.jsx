@@ -147,7 +147,9 @@ function Intro() {
             I'm Always open to discussing about new Projects, internship
             oportunities, or ways to contribute to your team{" "}
           </span>
-          <button className="work-btn">Get In Touch</button>
+          <Link to="/contact">
+            <button className="work-btn">Get In Touch</button>
+          </Link>
         </div>
       </section>
     </>
