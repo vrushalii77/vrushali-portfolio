@@ -55,7 +55,8 @@
 .hireme-btn {
   margin-top: 1rem;
   border: none;
-  background-color: aliceblue;
+  background-color: #244b93;
+  color: white;
   padding: 0.75rem 1rem;
   border-radius: 1rem;
   font-weight: bold;
@@ -64,10 +65,10 @@
   align-items: center;
   justify-content: center;
 }
-
-.hireme-img {
-  margin-right: 0.5rem;
-  height: 1rem;
+.hireme-icon {
+  margin-right: 0.5rem; /* or use 8px */
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
 
 /* Optional: center the button wrapper too */
@@ -99,9 +100,13 @@
     font-size: 1.5rem;
   }
 
+  .hireme-icon {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
   .hireme-btn {
-    background-color: white;
-    color: black;
+    padding: 10px 8px;
+    font-size: 10px;
   }
 }
 
@@ -175,10 +180,10 @@
 
 .abt-btn1 {
   padding: 10px 16px;
-  background-color: rgb(14, 84, 145);
+  background-color: #244b93;
   color: white;
   font-weight: 600;
-  border-radius: 40px;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -200,6 +205,9 @@
     width: 100%;
     align-items: center;
     text-align: center;
+  }
+  .abt-btn1 {
+    font-size: 10px;
   }
 
   .abt-me,
