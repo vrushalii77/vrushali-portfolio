@@ -41,11 +41,11 @@ function Aboutme() {
         <div className="personal-info">
           <div className="info1">
             <span className="details">Name:</span>
-            <span className="details1">Vrushali</span>
+            <span className="details1">Vrushali Jadhav</span>
           </div>
           <div className="info1">
             <span className="details">Email:</span>
-            <span className="details1">vrushali@example.com</span>
+            <span className="details1">vrushalinjadhav123@gmail.com</span>
           </div>
           <div className="info2">
             <span className="details">Phone:</span>
