@@ -49,7 +49,7 @@ function Aboutme() {
           </div>
           <div className="info2">
             <span className="details">Phone:</span>
-            <span className="details1">+91 1234567890</span>
+            <span className="details1">+91 9373635461</span>
           </div>
           <div className="info2">
             <span className="details">Location:</span>
