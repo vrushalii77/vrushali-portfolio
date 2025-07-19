@@ -1,78 +1,75 @@
 import React from "react";
 import "./Project.css";
+import { FaGithub } from "react-icons/fa";
 
 function Project() {
+  const projects = [
+    {
+      title: "Training & Placement Management System",
+      description:
+        "A comprehensive web-based application designed for colleges to effectively manage Training and Placement activities. This system facilitates seamless coordination between students, TPOs (Training and Placement Officers), and recruiters. It allows students to view and apply for job openings, while TPOs can post drives, manage company data, and monitor student applications. The platform ensures streamlined record keeping, communication, and placement tracking, enhancing the overall efficiency of the campus recruitment process.",
+      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", " JQuery "],
+      github:
+        "https://github.com/vrushalii77/Training-And-Placement-Management",
+    },
+    {
+      title: "QuickPoll - Live Poll Application",
+      description:
+        "QuickPoll allows users to create polls and view live results. Built with Spring Boot and JDBC for seamless voting experience.",
+      tech: ["Spring Boot", "Java", "JDBC", "HTML/CSS"],
+      github:
+        "https://github.com/vrushalii77/QuickPoll---Live-Poll-Application",
+    },
+    {
+      title: "Car-Rental Automation System",
+      description:
+        "A team-based web application developed during the Infosys Springboard Internship, designed to automate the car rental process for agencies. This Spring Boot-based system manages car availability, bookings, customer details, and secure payments through a user-friendly interface. Admins can easily add, update, or remove cars, while customers can browse available vehicles and make bookings seamlessly. The project ensures efficient rental operations and reduces manual workload.",
+      tech: ["Spring Boot", "Java", "MySQL", "Thymeleaf"],
+      github: "https://github.com/vrushali/weather-app",
+    },
+  ];
+
   return (
-    <div className="projects-section" id="projects">
-      <h2 className="projects-title">Projects</h2>
-      <div className="projects-grid">
-        <div className="project-card">
-          <h3>Training & Placement Management System</h3>
-          <p>
-            The Training and Placement Management System is a web-based platform
-            designed to streamline and automate the training and placement
-            activities in a college. It helps students, placement officers, and
-            recruiters efficiently manage placement-related tasks, including job
-            postings, student applications, and placement drives.
-          </p>
-          <a
-            href="https://github.com/vrushalii77/Training-And-Placement-Management"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-link"
-          >
-            View on GitHub
-          </a>
-        </div>
-
-        <div className="project-card">
-          <h3>QuickPoll - A Simple Polling Application</h3>
-          <p>
-            QuickPoll is a lightweight and easy-to-use polling application built
-            using Spring Boot and JDBC. This application allows users to create
-            polls, add options, vote on their preferred options, and view poll
-            results in real-time.
-          </p>
-          <a
-            href="https://github.com/vrushalii77/QuickPoll---Live-Poll-Application"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-link"
-          >
-            View on GitHub
-          </a>
-        </div>
-
-        <div className="project-card">
-          <h3>Car-Rental-Automation-System – Spring Boot</h3>
-          <p>
-            CARCADDY is a Spring Boot-based Car Rental Automation System that
-            simplifies vehicle management, bookings, and payments for rental
-            agencies. It ensures secure authentication, real-time availability
-            tracking, and a seamless rental experience.
-          </p>
-          <a
-            href="https://github.com/vrushali/weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-link"
-          >
-            View on GitHub
-          </a>
-        </div>
+    <section className="projects-stack-section" id="projects">
+      <h2 className="stack-title">Projects</h2>
+      <div className="stacked-projects">
+        {projects.map((proj, idx) => (
+          <div className="stack-project-card" key={idx}>
+            <div className="stack-project-content">
+              <h3>{proj.title}</h3>
+              <p>{proj.description}</p>
+              <div className="tech-stack">
+                {proj.tech.map((tech, i) => (
+                  <span className="tech-pill" key={i}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <a
+                href={proj.github}
+                className="stack-github-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="github-icon" /> View on GitHub
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
-
-      <div className="more-projects">
+      <div className="more-projects-btn">
         <a
-          href="https://github.com/vrushalii77"
+          href="https://github.com/vrushalii77?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="more-button"
         >
-          ➕ See More Projects
+          <button>
+            <span>View More Projects</span>
+            <i className="fas fa-arrow-right"></i>
+          </button>
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 
